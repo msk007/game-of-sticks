@@ -1,39 +1,38 @@
-import random
+
 
 def main():
     print("welcome to game of sticks!!!!!!!")
-    stcks= sticknum()
+    sticks= get_stick_num()
+    sticks_taken =int(input("Take how many sticks(1-3):")
 
-    opponent=input("Would uou like to play against player 2 or the computer? Press 1 for computer or 2 for player 2: ")
-        if input =='1':
-    opponent=computer
-        if input =='2':
-    opponent=player2
+    while True
+        print ("there are {} sticks in the pile." ).format(sticks)
+        if is_game_over(sticks):
 
-sticks_left=int(0)
+        break
+        if opponent==1:
+            opponent=2
+        else:
+            opponent=1
+            print "You loose"
+
+        break
+
+
+def is_game_over(stick_num):
+    if stick_num<=0:
+        return True
+    else:
+
+
 def sticknum():
-    while opponent=='2' and opponent=='1':
-        sticks=input("What is the number of sticky you want to start with? (10-100) ")
+    sticks=input("What is the number of sticky you want to start with? (10-100) ")
         if sticks >=10 and sticks<=100:
             print ("there are {} sticks in the pile." ).format(sticks)
         if sticks<10 or sticks>100:
             print "Number of sticks must be between 10 and 100."
 
-opponent='1'
-    while True:#human vs ai
-        print ("there are {} sticks in the pile." ).format(sticks)
-    sticks_taken =int(input("Take how many sticks(1-3):"))
-    sticks -= sticks_taken(opponent)
-    print "Sticks left: " , sticknum
-    if sticks_taken >=3 or sticks_taken <1:
-        print "Must choose 1-3"
-    if is_game_over(sticks):
-        break
-    if opponent==1:
-        opponent=2
-    else:
-        opponent=1
-print "You loose"
+
 
 
 
