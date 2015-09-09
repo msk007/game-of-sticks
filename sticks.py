@@ -13,3 +13,5 @@ if opponent==2 and opponent==1
     sticks=int(sticknum)
     if sticks >=10 and sticks<=100
         print ("there are {} sticks in the pile." ).format(sticks)
+    if sticks<10 or sticks>100:
+        print "Number of sticks must be between 10 and 100."
