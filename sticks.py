@@ -15,3 +15,18 @@ if opponent==2 and opponent==1
         print ("there are {} sticks in the pile." ).format(sticks)
     if sticks<10 or sticks>100:
         print "Number of sticks must be between 10 and 100."
+
+        break
+
+print "Sticks left: " , sticks
+    sticks_taken = int(raw_input("Take how many sticks(1-3):"))
+    if sticks == 1:
+        print "You took the last stick, you loose"
+
+        break
+
+    if sticks_taken >=3 or sticks_taken <1:
+        print "Must choose1-3"
+        continue
+    print "Computer took: " , (5 - sticks_taken) , "\n\n"
+    sticks -= 5
