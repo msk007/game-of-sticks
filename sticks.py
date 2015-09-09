@@ -22,7 +22,11 @@ def sticknum():
 opponent='1'
     while True:#human vs ai
         print ("there are {} sticks in the pile." ).format(sticks)
-    sticks -= sticks_out(cur_player)
+    sticks_taken =int(input("Take how many sticks(1-3):"))
+    sticks -= sticks_taken(opponent)
+    print "Sticks left: " , sticknum
+    if sticks_taken >=3 or sticks_taken <1:
+        print "Must choose 1-3"
     if is_game_over(sticks):
         break
     if opponent==1:
@@ -44,7 +48,8 @@ if sticks_taken >=3 or sticks_taken <1:
     if sticks == 1:
         print "You loose"
 
-def computer():
+opponent='2
+while True:'
     ai=computer
     computer=int(0)
     while opponent=='1' and sticks>=2:
@@ -55,7 +60,7 @@ def computer():
             sticks-=player1
             print("There are {} sticks left in the pile.").format(sticks)
     computer==random.randint(1,3)
-    print("computer took {} sticks").format(sticks_taken)
+    print("Opponent took {} sticks").format(sticks_taken)
     sticks-=ai
     if sticks==1:
         print "you win!"
